@@ -3,6 +3,9 @@ var threeItems = [1,2,3];
 //alert the result of your function
 
   //code here
+function last(arr) {
+	return arr[arr.length - 1];
+}
 
 
 
@@ -14,6 +17,14 @@ var threeItems = [1,2,3];
 var evenArray = [1,2,3,6,22,98,45,23,22,12];
 
   //code here
+function removeOdds(arr) {
+	for (var i = arr.length - 1; i >= 0; i--) {
+		if (arr[i] % 2 !== 0) {
+			arr.splice(i, 1);
+		}
+	}
+	return arr;
+}
 
 
 /* NEXT PROBLEM - NEXT PROBLEM - NEXT PROBLEM */
